@@ -5,9 +5,12 @@ import App from './App'
 import router from './router'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+import '@/assets/css/base.css'
+import MyHttpServer from './plugins/http'
 
 Vue.use(ElementUI)
-
+// eslint-disable-next-line no-undef
+Vue.use(MyHttpServer)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
